@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malibay</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div>
+        <img class="sogo1" src="images/sogo1.png" alt="" />
+        <img class="sogo2" src="images/sogo2.png" alt="" />
+      </div>
+
+      <div class="container">
+        <!-- WEEKEND RATE -->
+        <table class="weekend table" id="weekend">
+          <tr class="bg-yellow">
+            <th>WEEKEND RATE</th>
+            <th>PREMIUM</th>
+            <th>DELUXE</th>
+            <th>EXECUTIVE</th>
+            <th>MC DELUXE</th>
+            <th>MC EXECUTIVE</th>
+            <th>REGULAR GARAGE</th>
+            <th>EXECUTIVE GARAGE</th>
+          </tr>
+          <tr>
+            <td class="bg-yellow">3HRS</td>
+            <td class="rate">490</td>
+            <td class="rate">550</td>
+            <td class="rate">610</td>
+            <td class="rate">580</td>
+            <td class="rate">670</td>
+            <td class="rate">800</td>
+            <td class="rate">900</td>
+          </tr>
+          <tr>
+            <td class="bg-yellow">6HRS</td>
+            <td class="rate">890</td>
+            <td class="rate">950</td>
+            <td class="rate">1010</td>
+            <td class="rate">990</td>
+            <td class="rate">1070</td>
+            <td class="rate">1350</td>
+            <td class="rate">1460</td>
+          </tr>
+          <tr>
+            <td class="bg-yellow">10HRS</td>
+            <td class="rate">1215</td>
+            <td class="rate">1275</td>
+            <td class="rate">1335</td>
+            <td class="rate">1305</td>
+            <td class="rate">1395</td>
+            <td class="rate">1725</td>
+            <td class="rate">1825</td>
+          </tr>
+          <tr>
+            <td class="bg-yellow">12HRS</td>
+            <td class="rate">1405</td>
+            <td class="rate">1465</td>
+            <td class="rate">1525</td>
+            <td class="rate">1495</td>
+            <td class="rate">1735</td>
+            <td class="rate">2115</td>
+            <td class="rate">2225</td>
+          </tr>
+          <tr>
+            <td class="bg-yellow">24HRS</td>
+            <td class="rate">1835</td>
+            <td class="rate">1895</td>
+            <td class="rate">1975</td>
+            <td class="rate">1925</td>
+            <td class="rate">2115</td>
+            <td class="rate">2895</td>
+            <td class="rate">3005</td>
+          </tr>
+          <!-- <tr>
+            <td class="bg-yellow">OT</td>
+            <td>185</td>
+            <td>185</td>
+            <td>205</td>
+            <td>215</td>
+            <td>240</td>
+          </tr> -->
+        </table>
+        <!-- WEEKDAY RATE -->
+        <table class="weekday table" id="weekday">
+          <tr class="bg-yellow">
+            <th>WEEKDAY RATE</th>
+            <th>PREMIUM</th>
+            <th>DELUXE</th>
+            <th>EXECUTIVE</th>
+            <th>MC DELUXE</th>
+            <th>MC EXECUTIVE</th>
+            <th>REGULAR GARAGE</th>
+            <th>EXECUTIVE GARAGE</th>
+          </tr>
+          <!-- <tr>
+            <td class="bg-yellow">2HRS</td>
+            <td class="rate">295</td>
+            <td class="rate">350</td>
+            <td class="rate">380</td>
+            <td class="rate">420</td>
+            <td class="rate">540</td>
+          </tr> -->
+          <tr>
+            <td class="bg-yellow">3HRS</td>
+            <td class="rate">430</td>
+            <td class="rate">490</td>
+            <td class="rate">550</td>
+            <td class="rate">520</td>
+            <td class="rate">625</td>
+            <td class="rate">755</td>
+            <td class="rate">855</td>
+          </tr>
+          <tr>
+            <td class="bg-yellow">6HRS</td>
+            <td class="rate">755</td>
+            <td class="rate">795</td>
+            <td class="rate">875</td>
+            <td class="rate">845</td>
+            <td class="rate">950</td>
+            <td class="rate">1230</td>
+            <td class="rate">1330</td>
+          </tr>
+          <tr id="regular-ten">
+            <td class="bg-yellow">10HRS</td>
+            <td class="rate">940</td>
+            <td class="rate">1000</td>
+            <td class="rate">1060</td>
+            <td class="rate">1030</td>
+            <td class="rate">1135</td>
+            <td class="rate">1465</td>
+            <td class="rate">1545</td>
+          </tr>
+
+          <tr class="onp" id="onp">
+            <td class="bg-yellow">10HRSONP</td>
+            <td class="rate">600</td>
+            <td class="rate">680</td>
+            <td class="rate">760</td>
+            <td class="rate">725</td>
+            <td class="rate">825</td>
+            <td class="rate">1030</td>
+            <td class="rate">--</td>
+          </tr>
+
+          <tr>
+            <td class="bg-yellow">12HRS</td>
+            <td class="rate">1130</td>
+            <td class="rate">1190</td>
+            <td class="rate">1250</td>
+            <td class="rate">1160</td>
+            <td class="rate">1310</td>
+            <td class="rate">1850</td>
+            <td class="rate">1960</td>
+          </tr>
+          <tr>
+            <td class="bg-yellow">24HRS</td>
+            <td class="rate">1555</td>
+            <td class="rate">1615</td>
+            <td class="rate">1685</td>
+            <td class="rate">1645</td>
+            <td class="rate">1855</td>
+            <td class="rate">2485</td>
+            <td class="rate">2595</td>
+          </tr>
+          <!-- <tr>
+            <td class="bg-yellow">OT</td>
+            <td class="rate">165</td>
+            <td class="rate">165</td>
+            <td class="rate">185</td>
+            <td class="rate">200</td>
+            <td class="rate">215</td>
+          </tr> -->
+        </table>
+      </div>
+
+      <!-- date -->
+      <div>
+        <h3 id="dateElement"></h3>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
