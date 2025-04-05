@@ -60,14 +60,14 @@ td {
 }
 
 .weekday {
-  display: none;
+  display: block;
 }
 .weekend {
-  display: none;
+  display: block;
 }
 #dateElement {
   margin-top: 10px;
 }
 .onp {
-  display: none;
+  display: block;
 }
