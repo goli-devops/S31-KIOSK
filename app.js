@@ -31,13 +31,12 @@ setInterval(() => {
   let driveinRegularTen = document.getElementById("drivein-regular-ten")
   let driveinOnp = document.getElementById("drivein-onp")
 
-  // Weekend Rate: from Friday 6:00am to Sunday 6:00pm
   if (
-    (currentDay === 5 && currentHour >= 6) || // Friday from 6:00 am onwards
+    // Weekend: Friday from 6:01 AM to Sunday 6:00 PM
+    (currentDay === 5 && currentHour >= 6) || // Friday from 6:01 AM onwards
     currentDay === 6 || // Saturday all day
-    (currentDay === 0 && currentHour < 18)
+    (currentDay === 0 && currentHour < 18) // Sunday before 6:00 PM
   ) {
-    // Sunday before 6:00 pm
     // Show Weekend Rate
     weekendRateElement.style.display = "block"
     driveinWeekendElement.style.display = "block"
@@ -50,16 +49,15 @@ setInterval(() => {
     weekendRateElement.style.display = "none"
     driveinWeekendElement.style.display = "none"
   }
-  //Show ONP every 8:00 pm to 6:00 am Monday to Friday and Sunday
+
+  // Show ONP every 6:00 PM to 6:00 AM (Sunday to Friday)
   if (
-    // Sunday from 8 PM onwards
-    (currentDay === 0 && currentHour >= 20) ||
-    // Monday to Thursday from 8 PM to 6 AM (next day)
+    // ONP: Sunday to Thursday 6:00 PM to 6:00 AM
+    (currentDay === 0 && currentHour >= 18) || // Sunday after 6:00 PM
     (currentDay >= 1 &&
       currentDay <= 4 &&
-      (currentHour >= 20 || currentHour < 6)) ||
-    // Friday before 6 AM
-    (currentDay === 5 && currentHour < 6)
+      (currentHour >= 18 || currentHour < 6)) || // Monday to Thursday from 6:00 PM to 6:00 AM
+    (currentDay === 5 && currentHour < 6) // Friday before 6:00 AM
   ) {
     regularTen.style.display = "none"
     driveinRegularTen.style.display = "none"
