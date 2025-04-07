@@ -31,6 +31,8 @@ setInterval(() => {
   let driveinRegularTen = document.getElementById("drivein-regular-ten")
   let driveinOnp = document.getElementById("drivein-onp")
   let six = document.getElementById("six")
+let sixDrivein = document.getElementById("six-drivein")
+  
   if (
     // Weekend: Friday from 6:01 AM to Sunday 6:00 PM
     (currentDay === 5 && currentHour >= 6) || // Friday from 6:01 AM onwards
@@ -64,9 +66,11 @@ setInterval(() => {
     onp.style.display = "table-row"
     driveinOnp.style.display = "table-row"
     six.style.display = "none"
+    sixDrivein.style.display = "none"
   } else {
     onp.style.display = "none"
     six.style.display = "table-row"
+    sixDrivein.style.display = "table-row"
     driveinOnp.style.display = "none"
     regularTen.style.display = "table-row"
     driveinRegularTen.style.display = "table-row"
